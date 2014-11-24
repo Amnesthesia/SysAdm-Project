@@ -1,0 +1,9 @@
+---
+mysql::server::root_password: 'lolmysqlpw'
+
+databases:
+    wp:
+        user: 'wp'
+        password: 'lolpw'
+        host: 'localhost'
+        grant: 'ALL'

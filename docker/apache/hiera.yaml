@@ -1,0 +1,8 @@
+:backends:
+    - yaml
+:hierarchy:
+    - "common"
+    - "webserver"
+    - "sites"
+:yaml:
+    :datadir: '/etc/puppet/hieradata'

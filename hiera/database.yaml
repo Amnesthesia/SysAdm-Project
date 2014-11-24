@@ -1,0 +1,6 @@
+---
+users:
+    'MySQL':
+        name: 'mysql'
+        ensure: 'present'
+        managehome: false

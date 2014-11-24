@@ -1,0 +1,12 @@
+---
+classes:
+    - 'common::roles::%{::role}'
+users:
+    'dev':
+        name: 'dev'
+        ensure: present
+        managehome: true
+    'wp':
+        name: 'wp'
+        ensure: present
+        managehome: true
