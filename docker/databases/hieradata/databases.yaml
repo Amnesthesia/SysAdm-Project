@@ -1,0 +1,10 @@
+mysql::db:
+    council:
+        user: 'council'
+        password: 'council'
+        host: 'localhost'
+        grant: 
+            - SELECT
+            - UPDATE
+            - INSERT
+            - CREATE

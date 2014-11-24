@@ -1,0 +1,8 @@
+---
+classes:
+    - 'common::roles::%{::role}'
+users:
+    'MySQL':
+        name: 'mysql'
+        ensure: present
+        managehome: true

@@ -1,0 +1,10 @@
+sites:
+    wordpress:
+        install_dir: /var/www/wordpress
+        create_db: false
+        db_name: council
+        db_user: council
+        db_password: council
+        wp_owner: httpd
+        wp_group: www-data
+        wp_site_domain: 'council.example.com'

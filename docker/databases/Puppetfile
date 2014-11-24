@@ -1,0 +1,7 @@
+forge "http://forge.puppetlabs.com"
+mod "hunner/hiera"
+mod "puppetlabs/apt"
+mod "puppetlabs/concat"
+mod "puppetlabs/stdlib"
+mod "puppetlabs/mysql"
+mod "puppetlabs/vcsrepo"
