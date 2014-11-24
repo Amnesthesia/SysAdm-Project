@@ -21,7 +21,21 @@ node default{
     }~>
     docker::image{'ubuntu':
         image_tag => 'precise',
+    }~>
+    exec{"build-puppetbase":
+        command => "/usr/bin/docker build -t='council/puppetbase' /vagrant/docker/puppetbase"
+    }~>
+    exec{"build-db-image": 
+        command => "/usr/bin/docker build -t='council/db' /vagrant/docker/databases"
+    }~>
+    exec{"build-web-image":
+        command => "/usr/bin/docker build -t='council/web' /vagrant/docker/webserver"
+    }~>
+    exec{"start-db":
+        command => "/usr/bin/docker run -p 3306:3306 -P -d council/db"
+    }~>
+    exec{"start-web":
+        command => "/usr/bin/docker run -p 80:80 -P -d council/web"
     }
-
 
 }

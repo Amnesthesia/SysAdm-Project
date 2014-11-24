@@ -1,8 +1,0 @@
----
-classes:
-    - 'common::roles::%{::role}'
-users:
-    'httpd':
-        name: 'httpd'
-        ensure: present
-        managehome: true
