@@ -5,6 +5,6 @@ sites:
         db_name: council
         db_user: council
         db_password: council
-        wp_owner: httpd
+        wp_owner: www-data
         wp_group: www-data
-        wp_site_domain: 'council.example.com'
+        wp_site_domain: 'localhost'
