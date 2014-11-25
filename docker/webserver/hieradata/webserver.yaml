@@ -1,8 +1,8 @@
 apache::vhosts:
-    council.example.com:
+    localhost:
         port: 80
         docroot: /var/www/wordpress
-        docroot_owner: httpd
+        docroot_owner: www-data
         docroot_group: www-data
         options:
             - Indexes
