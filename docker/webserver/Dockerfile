@@ -10,4 +10,4 @@ RUN librarian-puppet install
 ADD init.pp /etc/puppet/manifests/default.pp
 RUN apt-get update && puppet apply --modulepath=/modules /etc/puppet/manifests/default.pp
 EXPOSE 80
-CMD ["apache2"]
+CMD ["/usr/sbin/apache2ctl", "start"]
