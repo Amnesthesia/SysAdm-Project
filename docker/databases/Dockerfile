@@ -10,4 +10,4 @@ RUN librarian-puppet install
 ADD init.pp /etc/puppet/manifests/default.pp
 RUN apt-get update && puppet apply --modulepath=/modules /etc/puppet/manifests/default.pp
 EXPOSE 3306
-CMD ["mysqld"]
+CMD ["service", "mysql", "start"]
