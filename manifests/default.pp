@@ -32,10 +32,10 @@ node default{
         command => "/usr/bin/docker build -t='council/web' /vagrant/docker/webserver"
     }~>
     exec{"start-db":
-        command => "/usr/bin/docker run -p 3306:3306 -P -d council/db"
+        command => "/usr/bin/docker run -P -d council/db"
     }~>
     exec{"start-web":
-        command => "/usr/bin/docker run -p 80:80 -P -d council/web"
+        command => "/usr/bin/docker run -P -d council/web"
     }
 
 }
